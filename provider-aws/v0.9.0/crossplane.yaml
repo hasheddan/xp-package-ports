@@ -1,0 +1,15 @@
+apiVersion: meta.pkg.crossplane.io/v1alpha1
+kind: Provider
+metadata:
+  name: provider-aws
+spec:
+  controller:
+    image: crossplane/provider-aws:v0.9.0
+  crossplane: v0.12.0
+  permissionRequests:
+  - apiGroups:
+      - crossplane.io
+    resources:
+      - "*"
+    verbs:
+      - "*"
