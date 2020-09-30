@@ -5,11 +5,3 @@ metadata:
 spec:
   controller:
     image: crossplane/provider-aws:v0.10.0
-  crossplane: v0.12.0
-  permissionRequests:
-  - apiGroups:
-      - crossplane.io
-    resources:
-      - "*"
-    verbs:
-      - "*"
